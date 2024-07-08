@@ -134,25 +134,25 @@ Para la instalación de Tmux seguiremos los siguientes pasos:
 - Primero instalamos las bibliotecas necesarias para que Tmux funcione correctamente mediante los siguientes comandos: 
 
   ```
-  apt install build-essential bison pkg-config
-  ```
-  ```
-  apt search ^libevent- | grep ^libevent- | awk '{print $1}' | xargs sudo apt install -y
-  ```
-  ```
-  apt search ^ncurses- | grep ^ncurses- | awk '{print $1}' | xargs sudo apt install -y
+  sudo apt install -y build-essential bison pkg-config libevent-dev libncurses-dev
   ```
 
 - Seguidamente procederemos a instalar Tmux utilizando los siguientes comandos: 
 
   ```
-    git clone https://github.com/tmux/tmux.git
+   sudo git clone https://github.com/tmux/tmux.git
   ```
   ```
     cd tmux
   ```
   ```
-    sh autogen.sh
+    sudo sh autogen.sh
+  ```
+  ```
+    sudo ./configure
+  ```
+  ```
+    sudo make && sudo make install
   ```
   
 
