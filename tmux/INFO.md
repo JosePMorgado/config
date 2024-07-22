@@ -55,7 +55,8 @@ tmux ls
 
 ## Shortcuts
 >[!NOTE]
->The default `Prefix`is `Ctrl+b` (Also seen as `C-b`, but you can change the `Prefix` by customizing the `.tmux.conf` file located in the `$HOME` directory.
+>The default `Prefix`is `C+b` (But you can change the `Prefix` by customizing the `.tmux.conf` file located in the `$HOME` directory.
+>On Linux the C key is Control, the S key is Shift, and the M key is Alt.
 
 ### Sessions
 - `Prefix w` Shows a sessions preview (Kill session with `x` or change session with `Enter`).
@@ -71,8 +72,13 @@ tmux ls
   
 ### Panes
 - `Prefix x` Kill the active pane.
-- `Prefix ctrl+%` Vertical pane split. 
-- `Prefix ctrl+"` Horizontal pane split.
+- `Prefix C+%` Vertical pane split. 
+- `Prefix C+"` Horizontal pane split.
 - `Prefix [h,j,k,l]` Pane move h-left, j-down, k-up, l-right.
-- `Prefix  hold ctrl+[h,j,k,l]` Pane resize.
-  
+- `Prefix  hold C+[h,j,k,l]` Pane resize.
+- `Prefix M+[1-5]` Change the pane layout to:
+  - 1. even-horizontal
+  - 2. even-vertical
+  - 3. main-horizontal
+  - 4. main-vertical
+  - 5. tiled
